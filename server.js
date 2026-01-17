@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "dashbaord-app.up.railway.app" }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
