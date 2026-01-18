@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(cors({ origin: "https://dashbaord-jade.vercel.app", credentials: true }));
+app.use(cors({ origin: "https://dashbaord-jade.vercel.app/", credentials: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
