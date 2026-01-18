@@ -9,7 +9,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(cors({ origin: "https://dashboard-app-fawn-two.vercel.app", credentials: true }));
+app.use(cors({ origin: "https://dashboard-app-fawn-two.vercel.app/login", credentials: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
